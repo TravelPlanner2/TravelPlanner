@@ -33,6 +33,16 @@ public class MainController {
         // Handle POST request here
         return "index";
     }
+
+    @GetMapping("/countries")
+    public String countries() {
+        return "countries";
+    }
+
+    @GetMapping("/index")
+    public String index() {
+        return "index";
+    }
 	
 	
 }

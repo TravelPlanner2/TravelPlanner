@@ -45,6 +45,7 @@
 		  .navbar a.active {
 			background-color: #666;
 			color: white;
+			pointer-events: none;
 	</style>
 
 </head>
@@ -53,8 +54,8 @@
 	<!--<nav class="navbar navbar-inverse navbar-fixed-top">-->
 		<!--<div class="container">-->
 			<div class="navbar">
-				<a href="#" class="active">Home</a>
-  				<a href="#">Countries</a>
+				<a href="/" th:href="@{/index}" class="active">Home</a>
+  				<a href="/" th:href="@{/countries}">Countries</a>
   				<a href="#">Places of Interest</a>
   				<a href="#">My Travels</a>
 				<a href="/" th:href="@{/login}" class="right">Logout</a>
