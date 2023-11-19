@@ -52,6 +52,7 @@ body {
 .right-section h2 {
     font-size: 74px;
     color: #009ee2;
+    font-weight: bold;
 }
 
 .right-section .input-group {
@@ -65,7 +66,34 @@ body {
 }
 
 .right-section input[type="email"],
-.right-section input[type="password"],
+.right-section input[type="password"] {
+    padding: 10px 20px;
+    border: none; /* Remove default border */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 364px; /* Set width */
+    box-sizing: border-box; /* Include padding and border in width */
+    background-color: white; /* Set background color */
+    outline: 2px solid #009ee2; /* Set outline with specific size and color */
+    outline-offset: -2px; /* Adjust outline position to fit the design */
+    background-image: url('v'); /* Add background image */
+    background-size: 20px; /* Set the size of the background image */
+    background-position: 10px center; /* Set the position of the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+/* Style the label for email and password */
+.right-section label[for="email"],
+.right-section label[for="password"] {
+    color: #009ee2;
+    font-size: 14px; /* Set font size */
+    margin-bottom: 5px;
+}
+
+.right-section input[type="password"] {
+    background-image: url('password-icon.png'); /* Add background image for password */
+}
+
 .right-section button[type="submit"] {
     padding: 10px 20px;
     border: none;
@@ -74,14 +102,18 @@ body {
     background-color: #009ee2;
     color: white;
     font-weight: bold;
-    width: 100%;
-    margin-bottom: 15px; /* Adds space below each input/button */
+    text-transform: uppercase; /* Make the text uppercase */
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.right-section button[type="submit"]:hover {
+    background-color: #0077b5;
 }
 
 .right-section button[type="submit"] {
-    margin-top: 20px; /* Adjust top margin for the Login button */
+    margin-top: 30px;
 }
-/* Existing CSS remains the same */
 
 /* Add styles for the image in the top-right corner */
 .top-right-image {
@@ -92,14 +124,16 @@ body {
     height: 47.92px; /* Set the height */
     border-radius: 8px; /* Optional: For a slight border-radius */
 }
-.top-left-image{
+
+.top-left-image {
     position: absolute;
     top: 15px;
     left: 740px;
     width: 52px;
     height: 55px;
-  }
-  .vector-icon2 {
+}
+
+.vector-icon2 {
     position: absolute;
     height: 9.22%;
     width: 6.18%;
@@ -110,8 +144,9 @@ body {
     max-width: 100%;
     overflow: hidden;
     max-height: 100%;
-  }
-  .vector-icon3 {
+}
+
+.vector-icon3 {
     position: absolute;
     height: 17.45%;
     width: 6.23%;
@@ -122,50 +157,59 @@ body {
     max-width: 100%;
     overflow: hidden;
     max-height: 100%;
-  }
-  .eiffel-tower-line-icon {
+}
+
+
+.social-login button img {
+    width: 100px; /* Set width for the images */
+    height: 50px; /* Set height for the images */
+   
+}
+
+.vector-left {
     position: absolute;
-    height: 17.45%;
-    width: 6.23%;
-    top: 82.55%;
-    right: 37.65%;
-    bottom: 0;
-    left: 89%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-  }
-  .taj-mahal-line-icon {
-    position: absolute;
-    height: 17.45%;
-    width: 6.23%;
-    top: 84.55%;
-    right: 37.65%;
-    bottom: 0;
-    left: 93%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-  }
-  .py-left{
-    position: absolute;
-    height: 17.45%;
-    width: 6.23%;
-    top: 86.65%;
-    right: 37.65%;
+    height: 112;
+    width: 193;
+    top: 660;
+    right: 30.65%;
     bottom: 0;
     left: 84.5%;
     max-width: 100%;
     overflow: hidden;
     max-height: 100%;
-  }
- /* Existing CSS remains the same */
-
-.social-login button img {
-    width: 100px; /* Set width for the images */
-    height: 50px; /* Set height for the images */
-    /* Add any additional styling for the images */
 }
 
-/* Add styles for the image in the top-right corner */
-/* Rest of the styles remain unchanged */
+.or-text {
+    color: #777; /* Grey color */
+    margin: 20px 0; /* Adjust the top and bottom margins */
+    position: relative;
+}
+
+
+.social-login {
+    margin-top: 10px; /* Adjust the top margin to move the social login icons up */
+}
+
+.social-login button img {
+    width: 100px;
+    height: 50px;
+}
+
+.or-text {
+    color: #777; /* Grey color */
+    margin: 20px 0; /* Adjust the top and bottom margins */
+    position: relative;
+}
+
+.forgot-password-link {
+    color: #777; /* Grey color */
+    display: block; /* Ensure it appears on a new line */
+    text-align: right; /* Align to the right */
+    margin-top: 5px; /* Add a small margin on top for spacing */
+    text-decoration: none; /* Remove underline by default */
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline; 
+}
+
