@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login Page</title>
-    <link rel="stylesheet" href="style.css"> <!-- Updated link to the CSS file -->
+    <link rel="stylesheet" href="style.css"> 
 </head>
 
 <body>
@@ -20,47 +20,27 @@
                 <input type="email" id="email" name="email" required>
                 <label for="password">Enter Password:</label>
                 <input type="password" id="password" name="password" required>
+                <a href="#" class="forgot-password-link">Forgot your password?</a>
                 <button type="submit">Login</button>
             </form>
+            
+            <p class="or-text">OR</p>
             <div class="social-login">
-                <!-- Image buttons for Google, Apple, and Facebook -->
-                <img src="group-682.svg" alt="Login with Google" onclick="loginWithGoogle()">
-                <img src="group-683.svg" alt="Login with Facebook" onclick="loginWithFacebook()">
+                <a href="https://accounts.google.com">
+                    <img src="group-682.svg" alt="Login with Google">
+                </a>
+                <a href="https://www.facebook.com">
+                    <img src="group-683.svg" alt="Login with Facebook">
+                </a>
             </div>
-            <p>Don't have an account? <a href="#">Register</a></p>
+            <p>Don't have an account? <a href="#" style="color: black; font-weight: bold;">Register Now</a></p>
         </div>
-        <!-- Add an image element for the top-right corner -->
         <img src="vector1.svg" alt="Top Right Image" class="top-right-image">
         <img src="vector.svg" alt="Top Left Image" class="top-left-image">
         <img src="vector2.svg" alt="bottom Left Image" class="vector-icon2">
         <img src="vector3.svg" alt="bottom Left Image" class="vector-icon3">
-        <img src="eiffel-tower-line.svg" alt="bottom right Image" class="eiffel-tower-line-icon">
-        <img src="taj-mahal-line.svg" alt="bottom right Image" class="taj-mahal-line-icon">
-        <img src="py.svg" alt="bottom right Image" class="py-left">
+        <img src="vector4.svg" alt="bottom right Image" class="vector-left">
     </div>
-
-    <script>
-        // Function to handle Google login
-        function loginWithGoogle() {
-            window.location.href = "https://accounts.google.com"; // Replace with your Google login URL
-        }
-
-        // Function to handle Facebook login
-        function loginWithFacebook() {
-            window.location.href = "https://www.facebook.com"; // Replace with your Facebook login URL
-        }
-
-        // Form submission handling
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            // Implement your login form submission handling here
-            let email = document.getElementById('email').value;
-            let password = document.getElementById('password').value;
-            console.log('Email:', email);
-            console.log('Password:', password);
-            // You can perform form validation and authentication logic here
-        });
-    </script src = "jscript.js"></script>
 </body>
 
 </html>
