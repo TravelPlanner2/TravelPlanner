@@ -43,6 +43,16 @@ public class MainController {
     public String index() {
         return "index";
     }
+
+    @GetMapping("/savetrip")
+    public String savetrip() {
+        return "savetrip";
+    }
+
+    @GetMapping("/countries/portugal")
+    public String getPortugal() {
+        return "portugal";
+    }
 	
 	
 }
