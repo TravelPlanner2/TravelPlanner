@@ -54,5 +54,19 @@ public class MainController {
         return "portugal";
     }
 	
+    @GetMapping("/countries/spain")
+    public String getspain() {
+        return "spain";
+    }
+    
+    @GetMapping("/countries/Egypt")
+    public String getEgypt() {
+        return "Egypt";
+    }
+    
+    @GetMapping("/countries/Hungary")
+    public String getHungary() {
+        return "Hungary";
+    }
 	
 }
